@@ -7,9 +7,11 @@ All the configuration placed in ./etc/ will be pushed to the container, this ima
 
 
 ## Usage:
-Use ```make``` to build and run the tests.:
- ```make build```                  # creates docker image
- ```make container-run```          # create the container using the latest image
- ```make container-delete```       # delete the container 
- ```make container-shell```        # open a bash shell into the running container 
- ```make container-asterisk-cli``` # open an astersk shell into the running container
+Use ```make``` to build and run:
+```
+ make build                   # creates docker image
+ make container-run           # create the container using the latest image
+ make container-delete        # delete the container 
+ make container-shell         # open a bash shell into the running container 
+ make container-asterisk-cli  # open an astersk shell into the running container
+```
