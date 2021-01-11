@@ -12,7 +12,7 @@ build:
 	docker build --tag $(IMAGE_NAME) . 
 
 container-run:
-	docker run -ti --name $(TEST_DOCKER_NAME) -p 5060:5060 -p 5060:5060/udp -P $(IMAGE_NAME)
+	docker run -ti --name $(TEST_DOCKER_NAME) -p 5061:5060 -p 5061:5060/udp -p 8089:8089 -P $(IMAGE_NAME)
 
 container-delete:
 	docker rm -f $(TEST_DOCKER_NAME)

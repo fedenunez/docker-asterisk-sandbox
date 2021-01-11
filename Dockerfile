@@ -26,7 +26,7 @@ RUN cd asterisk-18.*/;\
 RUN cd asterisk-18.*/;\
       make && make install && make samples && ldconfig && \
       ### Backup original conf files
-      for f in /etc/asterisk/*.conf; do cp -- "$f" "${f%.conf}.original"; done 
+      cp -ra /etc/asterisk/ /etc/asterisk.original/  
 
 ### Clean up files
 RUN apt-get -y autoremove && \
